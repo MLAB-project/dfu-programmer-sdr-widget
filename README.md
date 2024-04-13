@@ -1,5 +1,17 @@
 Modified slightly for flashing sdr-widget & audio-widget by Alex Lee.
 
+## Installation 
+
+  sudo apt-get install autotools-dev automake autoconf autotools-dev libusb-1.0-0-dev
+  git clone https://github.com/MLAB-project/dfu-programmer-sdr-widget.git
+  ./bootstrap.sh
+  ./configure
+  make
+  sudo make install
+  
+> tested on ubuntu 22.04, arm; 2024/04
+
+
 dfu-programmer is an implementation of the Device Firmware Upgrade class
 USB driver that enables firmware upgrades for various USB enabled (with the
 correct bootloader) Atmel chips.  This program was created because the
