@@ -1,16 +1,28 @@
+# DFU PROGRAMMER FOR SDR-WIDGET
 Modified slightly for flashing sdr-widget & audio-widget by Alex Lee.
 
 ## Installation 
-
+```
   sudo apt-get install autotools-dev automake autoconf autotools-dev libusb-1.0-0-dev
   git clone https://github.com/MLAB-project/dfu-programmer-sdr-widget.git
   ./bootstrap.sh
   ./configure
   make
   sudo make install
-  
+```
+
 > tested on ubuntu 22.04, arm; 2024/04
 
+## Usage:
+With MLAB SDR-WIDGET, sound card
+
+```
+  wget https://github.com/MLAB-project/sdr-widget/releases/download/bolidozor-v01/widget.elf
+  sudo ./program-widget widget.elf
+```
+
+
+### Original content
 
 dfu-programmer is an implementation of the Device Firmware Upgrade class
 USB driver that enables firmware upgrades for various USB enabled (with the
